@@ -16,7 +16,7 @@ spec:
     - effectiveDate: "2020-10-11"
       version: v11
     secret:
-      name: loki-netobserv-claim
+      name: logging-loki-s3
       type: s3
   hashRing:
     type: memberlist
