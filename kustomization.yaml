@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 - prerequisites
 - operator
+- flow-collector.yaml
