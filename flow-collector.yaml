@@ -102,7 +102,7 @@ spec:
     tenantID: netobserv
     staticLabels:
       app: netobserv-flowcollector
-    url: 'http://lokistack-sample-gateway-http.netobserv.svc:8080/'
+    url: 'https://lokistack-sample-gateway-http.netobserv.svc:8080/'
     batchWait: 1s
     authToken: DISABLED
     minBackoff: 1s
