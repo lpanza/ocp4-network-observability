@@ -1,0 +1,10 @@
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: loki-netobserv-claim
+spec:
+  additionalConfig:
+    bucketclass: noobaa-default-bucket-class
+  generateBucketName: loki-netobserv-claim
+  objectBucketName: obc-netobserv-loki-netobserv-claim
+  storageClassName: openshift-storage.noobaa.io
