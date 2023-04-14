@@ -13,8 +13,8 @@ spec:
         queryTimeout: 1m
   storage:
     schemas:
-      - effectiveDate: '2022-06-01'
-        version: v12
+    - effectiveDate: "2020-10-11"
+      version: v11
     secret:
       name: loki-netobserv-claim
       type: s3
