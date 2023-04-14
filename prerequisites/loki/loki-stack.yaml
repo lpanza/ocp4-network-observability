@@ -22,3 +22,4 @@ spec:
     type: memberlist
   size: 1x.small
   storageClassName: gp2
+  replicationFactor: 2
