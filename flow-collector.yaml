@@ -112,7 +112,7 @@ spec:
         name: loki-ca-bundle
         type: configmap
       enable: false
-      insecureSkipVerify: false
+      insecureSkipVerify: true
       userCert: {}
     batchSize: 10485760
   namespace: netobserv
