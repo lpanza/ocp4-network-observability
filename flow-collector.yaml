@@ -3,6 +3,8 @@ kind: FlowCollector
 metadata:
   name: cluster
   namespace: netobserv
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   agent:
     ebpf:

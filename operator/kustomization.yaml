@@ -3,3 +3,6 @@ kind: Kustomization
 
 resources: 
 - subscription.yaml
+
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "100"
