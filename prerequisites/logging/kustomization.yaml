@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - clusterlogging.yaml
 - subscription.yaml
+- namespace.yaml
 
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "50"
