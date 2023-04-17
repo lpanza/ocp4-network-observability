@@ -113,7 +113,7 @@ spec:
         certFile: service-ca.crt
         name: loki-ca-bundle
         type: configmap
-      enable: false
+      enable: true
       insecureSkipVerify: true
       userCert: {}
     batchSize: 10485760
