@@ -104,7 +104,7 @@ spec:
     tenantID: netobserv
     staticLabels:
       app: netobserv-flowcollector
-    url: "http://lokistack-sample-querier-http:3100"
+    url: "https://lokistack-sample-querier-http:3100"
     batchWait: 1s
     authToken: DISABLED
     minBackoff: 1s
