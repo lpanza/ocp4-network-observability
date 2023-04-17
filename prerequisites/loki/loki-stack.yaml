@@ -24,4 +24,6 @@ spec:
     type: memberlist
   size: 1x.extra-small
   storageClassName: gp2
+  rules:
+    enabled: true
   #replicationFactor: 2
