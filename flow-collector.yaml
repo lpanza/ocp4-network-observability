@@ -102,7 +102,7 @@ spec:
     tenantID: netobserv
     staticLabels:
       app: netobserv-flowcollector
-    url: "https://lokistack-sample-netobserv.apps.mcdso-hub.emea.hcaocp.com/"
+    url: 'https://lokistack-sample-netobserv.apps.mcdso-hub.emea.hcaocp.com/'
     batchWait: 1s
     authToken: DISABLED
     minBackoff: 1s
