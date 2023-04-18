@@ -104,9 +104,10 @@ spec:
     tenantID: netobserv
     staticLabels:
       app: netobserv-flowcollector
-    url: "https://lokistack-sample-querier-http.netobserv.svc:3100/"
+    url: "https://lokistack-sample-gateway-http.netobserv.svc:8080/api/logs/v1/network"
+    statusUrl: "https://lokistack-sample-query-frontend-http.netobserv.svc:3100/"
     batchWait: 1s
-    authToken: DISABLED
+    authToken: FORWARD
     minBackoff: 1s
     tls:
       caCert:
@@ -114,7 +115,7 @@ spec:
         name: lokistack-sample-ca-bundle
         type: configmap
       enable: true
-      insecureSkipVerify: true
+      insecureSkipVerify: false
       userCert: {}
     batchSize: 10485760
   namespace: netobserv
