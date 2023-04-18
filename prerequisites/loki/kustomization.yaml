@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
 - operator
-- loki-stack.yaml
+- lokistack

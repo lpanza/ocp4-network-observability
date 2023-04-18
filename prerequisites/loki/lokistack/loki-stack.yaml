@@ -2,28 +2,32 @@ apiVersion: loki.grafana.com/v1
 kind: LokiStack
 metadata:
   name: lokistack-sample
-  namespace: netobserv
-  annotations:
-    argocd.argoproj.io/sync-wave: "35"
 spec:
   tenants:
     mode: openshift-network
   managementState: Managed
   limits:
     global:
+      ingestion:
+        ingestionBurstSize: 40
+        ingestionRate: 20
+        maxGlobalStreamsPerTenant: 25000
       queries:
         queryTimeout: 1m
+        maxChunksPerQuery: 2000000
+        maxEntriesLimitPerQuery: 10000
+        maxQuerySeries: 3000
   storage:
     schemas:
     - effectiveDate: "2020-10-11"
-      version: v11
+      version: v12
     secret:
       name: logging-loki-s3
       type: s3
   hashRing:
     type: memberlist
   size: 1x.extra-small
-  storageClassName: gp2
+  storageClassName: gp3-csi
   rules:
     enabled: true
   #replicationFactor: 2
