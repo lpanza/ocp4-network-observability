@@ -5,6 +5,7 @@ resources:
 - clusterlogging.yaml
 - subscription.yaml
 - namespace.yaml
+- clusterlogging.yaml
 
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "50"
