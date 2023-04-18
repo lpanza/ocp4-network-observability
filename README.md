@@ -6,7 +6,7 @@ By adding the root of this repository to an ArgoCD instance, you can simply depl
 As an external prerequisite you will need to have an S3 storage provider, in our case we already have ODF installed because we used the MultiCluster DevSecOps Validated Pattern to install the cluster.
 
 # Careful!
-The only manual operation that you need to do, is to create the ```logging-loki-s3``` secret in the ```netobserv``` namespace, it should look like this:
+The only manual operation that you need to do is to create the ```logging-loki-s3``` secret in the ```netobserv``` namespace, it should look like this:
 ```
 apiVersion: v1
 kind: Secret
