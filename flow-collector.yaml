@@ -115,7 +115,7 @@ spec:
         name: lokistack-sample-ca-bundle
         type: configmap
       enable: true
-      insecureSkipVerify: false
+      insecureSkipVerify: true
       userCert: {}
     batchSize: 10485760
   namespace: netobserv
