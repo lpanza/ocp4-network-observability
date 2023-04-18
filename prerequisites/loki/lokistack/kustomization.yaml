@@ -9,3 +9,4 @@ commonAnnotations:
 resources:
 - clusterrole.yaml
 - loki-stack.yaml
+- clusterrolebinding.yaml
