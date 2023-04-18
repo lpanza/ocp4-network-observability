@@ -13,4 +13,8 @@ spec:
     repoURL: 'https://github.com/lpanza/ocp4-network-observability.git'
     targetRevision: HEAD
   project: default
-
+  syncPolicy:
+    automated:
+      selfHeal: true
+    retry:
+      limit: 5

@@ -104,14 +104,14 @@ spec:
     tenantID: netobserv
     staticLabels:
       app: netobserv-flowcollector
-    url: "https://lokistack-sample-querier-http:3100"
+    url: "https://lokistack-sample-netobserv.apps.mcdso-hub.emea.hcaocp.com/"
     batchWait: 1s
     authToken: DISABLED
     minBackoff: 1s
     tls:
       caCert:
         certFile: service-ca.crt
-        name: loki-ca-bundle
+        name: lokistack-sample-ca-bundle
         type: configmap
       enable: true
       insecureSkipVerify: true
