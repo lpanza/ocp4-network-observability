@@ -24,9 +24,9 @@ spec:
     secret:
       name: logging-loki-s3
       type: s3
-    tls:
-      caName: kube-root-ca.crt
-      caKey: ca.crt
+    tls: {}
+      #caName: kube-root-ca.crt
+      #caKey: ca.crt
   hashRing:
     type: memberlist
   size: 1x.extra-small
