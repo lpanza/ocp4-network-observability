@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - loki
 - storage
-- logging
+#- logging
